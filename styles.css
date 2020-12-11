@@ -122,7 +122,9 @@ a{
 	text-decoration: none;
 }
 .link_button_conteiner{
-	transform: translate(800px, 300px);
+	position: absolute;
+	margin-left: 60%;
+	margin-top: 22%;
 }
 .banner_one a:hover{
 		background: white;
