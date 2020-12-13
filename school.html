@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	 * {
+    margin: 0;
+    padding: 0;
+   }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f5f5f5;
+}
+nav { background: white; }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .4s ease-in-out;
+}
+.topmenu {
+  text-align: center;
+  padding: 10px 0;
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  background: #d2d2d2;
+  top: 16px;
+  box-shadow: 4px -2px 0 #d2d2d2;
+  transform: rotate(30deg);
+}
+.topmenu > li:last-child:after {
+  background: none;
+  box-shadow: none;
+}
+.topmenu > li > a {
+  padding: 12px 26px;
+  color: #767676;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Exo 2', sans-serif;
+}
+.topmenu li a:hover { color: #c0a97a; }
+.submenu {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 210px;
+  margin-left: -105px;
+  background: #fafafa;
+  border: 1px solid #ededed;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.8);
+  transition: .4s ease-in-out;
+}
+.submenu li a {
+  padding: 10px 0;
+  margin: 0 10px;
+  border-bottom: 1px solid #efefef;
+  font-size: 12px;
+  color: #484848;
+  font-family: 'Kurale', serif;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.menu{
+  transform: translate(170%, 30%);
+  height: 300px;
+  width: 300px;
+}
+select{
+  height: 30px;
+  width: 200px;
+  margin-left: 17%;
+  margin-top: 10%;
+  border-radius: 5px;
+}
+button{
+  height: 35px;
+  width: 100px;
+  margin: 90px;
+}
+.background_s{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+body{
+  background: 
+}
+</style>
+<body>
+  <div class="conteiner">
+		<nav>
+  <ul class="topmenu">
+    <li><a href="index.html">Начало</a></li>
+    <li><a id="bottom" href="">Магазин</a></li>
+    <li><a href="school.html">Школа</a>
+       <ul class="submenu">
+    <li><a href="#">Англиский</a></li>
+     <li><a href="#">Математика</a></li>
+     <li><a href="#">История</a></li>
+     <li><a href="#">Что бы перейти нажмите на "Школа"</a></li>
+     </ul>
+    </li>
+    <li><a href="">Веб-школа</a>
+      <ul class="submenu">
+    <li><a href="">Html</a></li>
+     <li><a href="">Css</a></li>
+     <li><a href="">Заказать сайт</a></li>
+     <li><a href="">Онлайн</a></li>
+     </ul>
+    </li>
+    <li><a href="">Контакты</a></li>
+  </ul>
+</nav>
+<div class="one">
+<div class="menu">
+<select id="one">
+ <option>Выберете свой класс</option>
+  <option>5</option>
+   <option>6</option>
+    <option>7</option>
+     <option>8</option>
+      <option>9</option>
+</select>
+<select id="two">
+ <option>Выберете предмет</option>
+  <option>Матeматика</option>
+   <option>История</option>
+    <option>Английский</option>
+     <option>Музыка</option>
+</select>
+<button id="btn">Найти предмет!</button>
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+  var btn = document.getElementById('btn');
+
+  btn.addEventListener('click', function(){
+    var a = document.querySelector('#one').value;
+    var b = document.querySelector('#two').value;
+
+    if (a == 5, b == 'Английский') {
+      window.open('school/5/english.html');
+      console.log('1')
+    }
+    if (a == 5, b == 'Математика') {
+      window.open('school/5/math.html');
+    }
+    if (a == 5, b == 'История') {
+      window.open('school/5/history.html');
+    }
+    if (a == 5, b == 'Музыка') {
+      window.open('school/5/music.html');
+    }
+
+
+
+    if (a == 6, b == 'Английский') {
+      window.open('school/6/english.html');
+    }
+    if (a == 6, b == 'Математика') {
+      window.open('school/6/math.html');
+    }
+    if (a == 6, b == 'История') {
+      window.open('school/6/history.html');
+    }
+    if (a == 6, b == 'Музыка') {
+      window.open('school/5/music.html');
+    }
+
+
+
+    if (a == 7, b == 'Английский') {
+      window.open('school/7/english.html');
+    }
+    if (a == 7, b == 'Математика') {
+      window.open('school/7/math.html');
+    }
+    if (a == 7, b == 'История') {
+      window.open('school/7/history.html');
+    }
+    if (a == 7, b == 'Музыка') {
+      window.open('school/7/music.html');
+    }
+
+
+
+    if (a == 8, b == 'Английский') {
+      window.open('school/8/english.html');
+    }
+    if (a == 8, b == 'Математика') {
+      window.open('school/8/math.html');
+    }
+    if (a == 8, b == 'История') {
+      window.open('school/8/history.html');
+    }
+    if (a == 8, b == 'Музыка') {
+      window.open('school/8/music.html');
+    }
+  
+
+
+
+    if (a == 9, b == 'Английский') {
+      window.open('school/9/english.html');
+    }
+    if (a == 9, b == 'Математика') {
+      window.open('school/9/math.html');
+    }
+    if (a == 9, b == 'История') {
+      window.open('school/9/history.html');
+    }
+    if (a == 9, b == 'Музыка') {
+      window.open('school/9/music.html');
+    }
+})
+</script>
+</body>
+</html>
